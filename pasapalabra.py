@@ -292,6 +292,36 @@ zcolor = ""
 
 rosco = 1
 
+ulet = 0
+ures = 26
+ucor = 0
+uinc = 0
+
+dlet = 0
+dres = 26
+dcor = 0
+dinc = 0
+
+rlet = 0
+rres = 26
+rcor = 0
+rinc = 0
+
+clet = 0
+cres = 26
+ccor = 0
+cinc = 0
+
+ilet = 0
+ires = 26
+icor = 0
+iinc = 0
+
+slet = 0
+sres = 26
+scor = 0
+sinc = 0
+
 # genrerar numeros aleatorios
 from random import randint
 
@@ -350,6 +380,41 @@ for i in range(26):
 
 #definir funciones
 def updateLabels():
+	global rosco
+	global uno
+	global dos
+	global tres
+	global cuatro
+	global cinco
+	global seis
+	
+	global acolor
+	global bcolor
+	global ccolor
+	global dcolor
+	global ecolor
+	global fcolor
+	global gcolor
+	global hcolor
+	global icolor
+	global jcolor
+	global kcolor
+	global lcolor
+	global mcolor
+	global ncolor
+	global ocolor
+	global pcolor
+	global qcolor
+	global rcolor
+	global scolor
+	global tcolor
+	global ucolor
+	global vcolor
+	global wcolor
+	global xcolor
+	global ycolor
+	global zcolor
+	
 	if rosco == 1:
 		acolor = uno['a']
 		bcolor = uno['b']
@@ -540,6 +605,27 @@ def updateLabels():
 	y.config(bg=ycolor)
 	z.config(bg=zcolor)
 def masuno():
+    global timer
+    global rosco
+    global ures
+    global uno
+    global ulet
+    global dres
+    global dos
+    global dlet
+    global rres
+    global tres
+    global rlet
+    global cres
+    global cuatro
+    global clet
+    global ires
+    global cinco
+    global ilet
+    global sres
+    global seis
+    global slet
+    
     if rosco == 1:
         if ures != 0:
             while uno[ulet] != "blue":
@@ -559,12 +645,12 @@ def masuno():
         else:
             timer = 0
     elif rosco == 3:
-        if tres != 0:
-            while tres[tlet] != "blue":
-                if tlet >= 25:
-                    tlet = 0
+        if rres != 0:
+            while tres[rlet] != "blue":
+                if rlet >= 25:
+                    rlet = 0
                 else:
-                    tlet += 1
+                    rlet += 1
         else:
             timer = 0
     elif rosco == 4:
